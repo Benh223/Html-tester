@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Contact Form</h2>
+
+  <form action="/submit" method="POST">
+
+    <label for="question1">Question 1:</label>
+    <textarea id="question1" name="question1" rows="3"></textarea>
+
+    <label for="question2">Question 2:</label>
+    <textarea id="question2" name="question2" rows="3"></textarea>
+
+    <label for="question3">Question 3:</label>
+    <textarea id="question3" name="question3" rows="3"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
